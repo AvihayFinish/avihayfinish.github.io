@@ -128,12 +128,6 @@
       margin-bottom: 8px;
     }
 
-    .screenshots .subtitle {
-      color: var(--muted);
-      margin-bottom: 40px;
-      font-size: 0.95rem;
-    }
-
     .screenshot-grid {
       display: flex;
       gap: 16px;
@@ -145,22 +139,8 @@
       width: 180px;
       aspect-ratio: 9/19;
       border-radius: 20px;
-      border: 2px dashed rgba(25,118,210,.4);
-      background: var(--card);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--muted);
-      font-size: 0.8rem;
       overflow: hidden;
-    }
-
-    /* When you're ready to add real screenshots, replace the .screenshot-slot div
-       with an <img src="screenshots/screen1.png" class="screenshot-slot" alt="…"> */
-    .screenshot-slot svg {
-      opacity: .4;
+      object-fit: cover;
     }
 
     /* ─── FEATURES (optional row) ─── */
@@ -254,44 +234,38 @@
   <section class="features">
     <div class="feature-card">
       <div class="icon">⚽</div>
-      <h3>Live Match Info</h3>
-      <p>Real scores, events, and stats updated in real time.</p>
+      <h3>Welcome to Stad</h3>
+      <p>Your social sports network. Follow your favorite teams and connect with fans around the world.</p>
     </div>
     <div class="feature-card">
-      <div class="icon">📣</div>
-      <h3>Team Feed</h3>
-      <p>Follow your teams and see posts from fellow fans.</p>
+      <div class="icon">📰</div>
+      <h3>Your Feed</h3>
+      <p>Discover and share posts with other fans. Switch between For You and Following tabs, and write your own posts right from the Feed.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">📺</div>
+      <h3>Live Matches</h3>
+      <p>Track real-time scores, match events, and statistics for all your favorite teams and leagues.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">👤</div>
+      <h3>Your Profile</h3>
+      <p>Set your profile picture and cover photo, build your engagement stats, and get discovered by other sports fans.</p>
     </div>
     <div class="feature-card">
       <div class="icon">🏆</div>
-      <h3>Standings &amp; Tables</h3>
-      <p>League tables and player stats always at your fingertips.</p>
+      <h3>Predictions Game</h3>
+      <p>Predict match outcomes, earn points, and compete on leaderboards. Create private groups with friends and see who knows their football best.</p>
     </div>
   </section>
 
   <!-- ═══ SCREENSHOTS ═══ -->
   <section class="screenshots">
     <h2>See it in action</h2>
-    <p class="subtitle">Screenshots coming soon</p>
     <div class="screenshot-grid">
-      <!-- Replace each .screenshot-slot div with an <img> when ready -->
-      <!-- Example: <img src="screenshots/screen1.png" class="screenshot-slot" alt="Feed screen"> -->
-      <div class="screenshot-slot">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-        <span>Screen 1</span>
-      </div>
-      <div class="screenshot-slot">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-        <span>Screen 2</span>
-      </div>
-      <div class="screenshot-slot">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-        <span>Screen 3</span>
-      </div>
-      <div class="screenshot-slot">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-        <span>Screen 4</span>
-      </div>
+      <img src="screenshots/screen1.png" class="screenshot-slot" alt="Stad app screenshot 1">
+      <img src="screenshots/screen2.png" class="screenshot-slot" alt="Stad app screenshot 2">
+      <img src="screenshots/screen3.png" class="screenshot-slot" alt="Stad app screenshot 3">
     </div>
   </section>
 
